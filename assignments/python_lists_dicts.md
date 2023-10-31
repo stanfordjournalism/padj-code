@@ -6,7 +6,7 @@
 
 Read and work through the following:
 
-> **NOTE: You don't have to do the exercises in Automate the Boring Stuff, but you should type in the commands for code examples throughout the text. Use a standard interactive Python shell by typing `python` or `ipython` (if you've installed the latter).**
+> **NOTE: You don't have to do the exercises in Automate the Boring Stuff, but you should type in the commands for code examples throughout the text. Use a [JupyterLite notebook tab][] or fire up an interactive Python shell in GitHub Codespace by typing `python` in the Bash terminal.
 
 * Lists
 	* Read [Automate's Chapter 4 on Lists](https://automatetheboringstuff.com/chapter4/) and **stop right before** the section titled [Example Program: Magic 8 Ball with a List](https://automatetheboringstuff.com/chapter4/#calibre_link-2296).
@@ -17,3 +17,5 @@ Read and work through the following:
 	*  [W3C schools](https://www.w3schools.com/python/python_dictionaries.asp) - Review all sections on dictionary syntax and work through the [exercises](https://www.w3schools.com/python/exercise.asp?filename=exercise_dictionaries1) at the end.
 
 [Automate the Boring Stuff]: https://automatetheboringstuff.com/
+
+[JupyterLite notebook tab]: https://stanfordjournalism.github.io/data-journalism-notebooks/lab
