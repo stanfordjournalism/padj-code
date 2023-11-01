@@ -7,13 +7,11 @@
 
 ## Overview
 
-> Grading is generally based on the [College Board scale](https://pages.collegeboard.org/how-to-convert-gpa-4.0-scale), with 97-100 representing an A+.
-
 This class emphasizes the importance of producing readable, reusable and reliable code.
 
 **Technical assignments are therefore not graded purely on the accuracy of output or results. While correct output/results are important, code *quality* is also an important consideration.**
 
-A Python script that produces the correct result is *not* guaranteed an A+. On the flip side, a script that is broken or produces an *incorrect* result may still receive a passing or high grade depending on the severity of the bugs and other important factors.
+A Python script that produces the correct result is *not* guaranteed an A. On the flip side, a script that is broken or produces an *incorrect* result may still receive a passing or high grade depending on the severity of the bugs and other important factors.
 
 ## Point deductions
 
