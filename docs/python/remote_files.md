@@ -9,7 +9,7 @@
 
 Acquiring files from government agencies and other data sources on the Web is crucial to data journalism.
 
-The Python language and ecosystem offer numerous libraries for working with remote resources. In this course, we'll focus on [requests][], a third-party library that is a go-to resource because of its ease of use and flexibility. [requests][] can handle a variety of scenarios, from simple downloads of data files to working with authentication-based APIs such as Twitter.
+The Python language and ecosystem offer numerous libraries for working with remote resources. In this course, we'll focus on [requests][], a third-party library that is a go-to resource because of its ease of use and flexibility. [requests][] can handle a variety of scenarios, from simple downloads of data files to working with websites or APIs that require username/password, API keys, or some of other form of authentication.
 
 [requests]: https://requests.readthedocs.io/en/latest
 
