@@ -5,18 +5,18 @@ On your quest to become a Pythonista, there will be many hurdles. As your guides
 
 ## Your Code Will Break
 
-As you may have already experienced, things will go wrong. Whether it's with your programming environment and tools or the actual code that you're writing, you should embrace the fact that you will encounter technical snags and bugs will crop up on your work.
+As you may have already experienced, things will go wrong. Whether it's with your programming environment and tools or the actual code that you're writing, you should embrace the fact that you will encounter technical snags and bugs will crop up in your work.
 
-In fact, bugs will typically show up long before any usable solution arrives. Embracing this fact will help blunt the frustration when your code does not work the first, second, or third time. More importantly, accepting bugs and technical headaches as a natural part of the coding process helps frame this as a process of growth, one in which it is normal and highly encouraged for you to seek help as you wrestle with code issues and other problems.
+In fact, bugs will typically show up long before any working solution. Embracing this fact can help reduce frustration and stress when your code does not work the first, second, or third time. More importantly, accepting bugs and technical headaches as a natural part of the coding process helps frame this as a process of growth, one in which it is normal and highly encouraged for you to seek help as you wrestle with code issues and other problems.
 
-Having reached this zen-like state of equanimity and openness to help, it's important to apply some best practices when you actually reach out to your classmates, friends or instructors for guidance.
+Having reached this zen-like state of equanimity and openness to help, it's important to apply some best practices when you actually reach out for assitance from your classmates, friends or instructors.
 
-Below are a few guidelines that will streamline your ability to get help.
+Below are a few guidelines that will help you get help.
 
 
 ## Apply the 15-minute rule
 
-It's tempting to slog away at a problem for hours on end (and often deep into the night). We urge you *not* to do this. If you've made an honest effort (i.e. put in at least 15 minutes) to solve a particular issue but remain stuck, please don't continue suffering for hours on end by yourself. Reach out for help. Often, the mere act of describing your problem to someone else will magically surface a solution. We call this rubber duck programming.
+It's tempting to slog away at a problem for hours on end (and often deep into the night). We urge you *not* to do this. If you've made an honest effort (i.e. put in at least 15 minutes) to solve a particular issue but remain stuck, please don't continue suffering for hours on end by yourself. Reach out for help. Often, the mere act of describing your problem to someone else -- or even a [rubber duck](https://en.wikipedia.org/wiki/Rubber_duck_debugging) will magically reveal the solution.
 
 Below are some best practices on how to ask technical questions in a way that clearly communicates the problem and provides enough context for someone else to dive into the situation with you.
 
