@@ -1,6 +1,6 @@
 # Getting Programming Help
 
-On your quest to become a Pythonista, there will be many hurdles. As your guides on this learning journey, we should stress that we too are still learning but can at least share a few things we have learned along the way.
+On your quest to become a Pythonista, there will be many hurdles. As your guides on this learning journey, we should stress that we too are still learning but can at least share a few best practices we have picked up along the way.
 
 
 ## Your Code Will Break
