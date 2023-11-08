@@ -56,4 +56,4 @@ But, if you still need help, you can try these resources:
 
 ## A Final Note
 
-The resources listed above can be helpful, but they can hinder your learning if you jump to them before struggling with the problem yourself. At the end of the day, nothing will help you learn faster than fighting with bugs and thinking through how you would fix them first.
+The resources listed above can be helpful, but they can hinder your learning if you jump to them before struggling with the problem yourself. At the end of the day, nothing will help you learn faster than fighting with bugs and thinking through how you would fix them first. Just don't forget about the [15-minute rule](#apply-the-15-minute-rule).
