@@ -16,7 +16,7 @@ Below are a few guidelines that will help you get help.
 
 ## Apply the 15-minute rule
 
-It's tempting to slog away at a problem for hours on end (and often deep into the night). We urge you *not* to do this. If you've made an honest effort (i.e. put in at least 15 minutes) to solve a particular issue but remain stuck, please don't continue suffering for hours on end by yourself. Reach out for help. Often, the mere act of describing your problem to someone else -- or even a [rubber duck](https://en.wikipedia.org/wiki/Rubber_duck_debugging) will magically reveal the solution.
+It's tempting to slog away at a problem for hours on end (and often deep into the night). We urge you *not* to do this. If you've made an honest effort (i.e. put in at least 15 minutes) to solve a particular issue but remain stuck, please don't continue suffering for hours on end by yourself. Reach out for help. Often, the mere act of describing your problem to someone else -- or even a [rubber duck](https://en.wikipedia.org/wiki/Rubber_duck_debugging) -- will magically reveal the solution.
 
 Below are some best practices on how to ask technical questions in a way that clearly communicates the problem and provides enough context for someone else to dive into the situation with you.
 
