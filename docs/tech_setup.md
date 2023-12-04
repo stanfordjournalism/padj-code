@@ -20,26 +20,9 @@ This course requires a number of free services and tools available on Unix/Mac s
 
 ## Windows
 
-Windows users will need to gain access to a Linux system.
+Windows users will need to use VSCode and Windows Subsystem for Linux
 
-### Data Journalism VM
-
-We offer a Linux virtual machine with a graphical Desktop environment, pre-configured with most of the software you'll need for
-the course. To use it:
-
-* Download and [install VirtualBox](https://www.virtualbox.org/wiki/Downloads)
-* Download the [data journalism virtual machine](https://www.dropbox.com/s/c5gfwrm3ofmejk5/stanford-dj-vm.ova?dl=0)
-* Follow the instructions in [this video](https://youtu.be/p2Ngy7smS78)
-* Inside the Ubuntu VM:
-  * Open the Terminal Emulator by double-clicking
-  * Type `python setup/configure_system.py` in the shell and hit `return`/`enter`
-  * Answer the questions when prompted
-
-> Congrats! You're almost done. Skip to the [DataKit install](#datakit).
-
-### VSCode and Windows Subsystem for Linux
-
-For users on more modern versions of Windows, you can use the Windows Subsystem for Linux. This provides a ready-made Linux shell environment (without a graphical Desktop) that integrates nicely with the Visual Studio Code Editor. 
+This provides a ready-made Linux shell environment (without a graphical Desktop) that integrates nicely with the Visual Studio Code Editor.
 
 Follow the instructions [here](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl) to get up and running.
 
@@ -91,13 +74,13 @@ sudo apt install git-all
 
 ## Python
 
-**Python 3.7 - 3.8**
+**Python 3.10 - 3.11**
 
 Before installing Python, first open a shell and run: `python --version`.
 
-If you have a version between Python 3.7 and 3.8, you're all set.
+If you have Python 3.10 or 3.11, you're all set.
 
-If you have an older Python version (e.g. 2.7), follow the below instructions for Mac users.
+If you have an older Python version (e.g. 2.7, 3.9, etc.), follow the below instructions for Mac users.
 
 ### Mac
 
@@ -105,18 +88,16 @@ Mac users will use Homebrew to install Python. At a high level, the
 process involves installing a tool called [pyenv][]. This tool allows
 you to install and manage multiple versions of Python.
 
-We'll use it to install Python 3.8.12 (the latest version of 3.8 at the
-time of writing).
+We'll use it to install Python 3.11 (the latest version of time of writing).
 
-First, open a Terminal and make sure your shell is set to bash (newer Macs default to zsh):
+First, open a Terminal and determine which shell you are using (newer Macs will use zsh, older will have bash).
 
 ```bash
-chsh -s /bin/bash
+echo $SHELL
 ```
 
-Close and re-open the Terminal.
-
-Then run the below commands.
+Once that is complete, you're ready to install a few dependencies for
+pyenv, followed by pyenv itself.
 
 > Execute the below commands one by one (i.e. copy and paste each row
 > individually rather than all the commands at once).
@@ -126,29 +107,28 @@ Then run the below commands.
 
 brew install openssl readline sqlite3 xz zlib
 brew install pyenv
-pyenv install 3.8.12
-pyenv global 3.8.12
+pyenv install 3.11.6
+pyenv global 3.11.6
 ```
 
-Then run the below commands to configure your shell, per the [pyenv docs for bashrc on Mac](https://github.com/pyenv/pyenv#basic-github-checkout).
+Then, follow the steps in the [pyenv configuration instructions](https://github.com/pyenv/pyenv#set-up-your-shell-environment-for-pyenv) to configure your shell.
 
-> Below is the workflow if no `~/.profile`, `~/.bash_profile` or `~/ .bashrc` already exist, which apparently is default on Macs.
+> Below is the workflow for folks on the Zsh shell, which is the
+> current default for Macs. See the pyenv docs if you're on bashrc, or
+> ask how you can change your default shell.
 
 ```bash
-echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.profile
-echo 'export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.profile
-echo 'eval "$(pyenv init --path)"' >> ~/.profile
-echo 'if [ -n "$PS1" -a -n "$BASH_VERSION" ]; then source ~/.bashrc; fi' >> ~/.profile
-
-echo 'eval "$(pyenv init -)"' >> ~/.bashrc
+echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.zshrc
+echo '[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.zshrc
+echo 'eval "$(pyenv init -)"' >> ~/.zshrc
 ```
 
 Close and restart the Terminal.
 
-Type `python --version`, which should return 3.8.12
+Type `python --version`, which should return `3.11.6`.
 
-> If you do not see Python 3.8 at the end of this process, please reach
-> out for help.
+> If you do not see Python 3.11.6 at the end of this process, please reach
+> out for help!
 
 [Homebrew]: https://brew.sh/
 [git]: https://git-scm.com/
@@ -175,30 +155,26 @@ exec "$SHELL"
 sudo apt-get update
 sudo apt-get install --no-install-recommends make build-essential libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev xz-utils tk-dev libxml2-dev libxmlsec1-dev libffi-dev liblzma-dev
 
-# Install python version 3.7.6
-pyenv install 3.7.6
-pyenv global 3.7.6
+# Install python version 3.11.6
+pyenv install 3.11.6
+pyenv global 3.11.6
 ```
 
 ## Configure
 
-Open a Terminal/shell. 
+Open a Terminal/shell.
 
 Download and run our configuration script. You'll need to answer a few questions along the way.
 
 ```
 cd ~
 
-curl -O https://raw.githubusercontent.com/stanfordjournalism/stanford-dj-vm/master/configure_system.py
+curl -O https://raw.githubusercontent.com/stanfordjournalism/padj23-code/main/code/configure_mac_linux.py
 
-python configure_system.py
+python configure_mac_linux.py
 ```
 
-The configuration script will prompt you to peform a few additional steps:
-
-1. [Upload your ssh public key to GitHub](https://help.github.com/en/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account)
-1. [Create a GitHub API token](https://help.github.com/en/github/authenticating-to-github/creating-a-personal-access-token-for-the-command-line)
-1. Open `~/.datakit/plugins/datakit-github/config.json` and replace `GITHUB_API_TOKEN` with the actual token from GitHub.
+The configuration script will prompt you to upload your [upload your ssh public key to GitHub](https://help.github.com/en/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account).
 
 ## DataKit
 
