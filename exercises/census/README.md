@@ -31,7 +31,7 @@ One example of how we can use decennial census data is [Census Mapper](https://c
 
 ### American Community Survey
 
-The ACS is a more timely and vastly richer dataset than the decennial census with thousands of variables providing detailed information on age, sex, race, ethnicity, income, education, living conditions and many more demographic measures. It is released annually rather than once every decade in [1-year](https://www.census.gov/data/developers/data-sets/acs-1year.html) and [5-year](https://www.census.gov/data/developers/data-sets/acs-5year.2021.html#list-tab-1036221584) estimates.
+The [ACS](https://www.census.gov/programs-surveys/acs/library/handbooks/general.html) is a more timely and vastly richer dataset than the decennial census with thousands of variables providing detailed information on age, sex, race, ethnicity, income, education, living conditions and many more demographic measures. It is released annually rather than once every decade in [1-year](https://www.census.gov/data/developers/data-sets/acs-1year.html) and [5-year](https://www.census.gov/data/developers/data-sets/acs-5year.2021.html#list-tab-1036221584) estimates.
 
 The drawback to the ACS is it is sample-based and not a full count of the population. This means there is some uncertanity in the data. These are estimates and as such have margins of error related to them (more on that below).
 
@@ -59,21 +59,22 @@ Census counts and estimates are reported at a wide variety of geographic levels 
 
 ## Margins of error
 
-Margins of error tell us the reliability of data collected from surveys where sampling is used. The smaller the sample size, the larger the margin of error. Consider the median household income in Santa Clara County:
+Margins of error tell us the reliability of data collected from surveys where sampling is used. The smaller the sample size, the larger the margin of error. For more detail, see the [ACS handbook](https://www.census.gov/content/dam/Census/library/publications/2020/acs/acs_general_handbook_2020_ch07.pdf). Consider the median household income in Santa Clara County:
 
 |Name|Dataset|Median Household Income|Margin of Error|
 |---|---|---:|---:|
 |Santa Clara County|2021 ACS 1-year|\$141,562|±\$2,669|
 
-We can say the true median household income is within \\$2,669 of the published estimate of $141,562. If we subtract the margin of error from the published estimate, we get the lower bound of the estimate. Adding it to the estimate gives us the estimate's upper bound.
+We can say the true median household income is within \\$2,669 of the published estimate of $141,562. If we subtract the margin of error from the published estimate, we get the lower bound of what is known as the confidence interval. Adding the margin of error to the estimate gives us the confidence interval's upper bound. The confidence interval is the range in which we can say with some degree of confidence the estimate's true value exists.
+
 |Name|Dataset|Median Household Income|Margin of Error|Lower Bound|Upper Bound|
 |---|---|---:|---:|---:|---:|
 |Santa Clara County|2021 ACS 1-year|\$141,562|±\$2,669|\$138,893|\$144,231|
 
-We can say with some degree of confidence that the true median household income is somewhere between \$138,893 and \\$144,231. Just how much confidence? The Census Bureau publishes their estimates at the 90 percent confidence interval. So we can say the following:
+In this example, we can say with some degree of confidence that the true median household income is somewhere between \$138,893 and \\$144,231. Just how much confidence? The Census Bureau publishes their estimates at the 90 percent confidence level. So we can say the following:
 > We are 90 percent confident the median household income for Santa Clara County is between \\$138,893 and \$144,231.
 
-**IMPORTANT:** You should always keep an eye on the margin of error. Look for cases where the lower bound of the estimate is less than zero or no longer makes sense.
+**IMPORTANT:** You should always keep an eye on the margin of error. Look for cases where the lower bound of the confidence interval is less than zero or no longer makes sense.
 
 We can reduce the margin of error and make our estimates more reliable by increasing the sample size. There are a couple of ways to do that with Census data.
 ### Use a larger geography
@@ -84,7 +85,7 @@ The easiest way to increase sample size is to increase the size of the geography
 |Santa Clara County|2021 ACS 1-year|\$141,562|±\$2,669|\$138,893|\$144,231|
 |State of California|2021 ACS 1-year|\$84,907|±\$542|\$84,365|\$85,449|
 
-The error margins are much narrower at the state level, but not without cost. The state estimate also includes other counties, not just Santa Clara County. But the state estimate doesn't accurately reflect the county estimate. This can be problematic if the scope of the analysis needs to be at the county level.
+The margin of error is much lower at the state level, but not without cost. The state estimate also includes other counties, not just Santa Clara County. But the state estimate doesn't accurately reflect the county estimate. This can be problematic if the scope of the analysis needs to be at the county level.
 
 If the analysis focuses on small geographies such as census tracts, consider switching to a county-level analysis to increase the reliability of the data.
 
@@ -105,7 +106,7 @@ The margin of error is much smaller and the estimates look closer to each other.
 ### Avoid segmenting the population
 If possible, avoid segmenting the population into demographic subgroups. This can be difficult because we often want to look at things and consider other factors such as age, sex, race and/or ethnicity. 
 
-However whenever we do so, the margin of error will most likely increase because the sample size is reduced. For example, the median income for multi-racial households in Santa Clara County has a much larger error margin than the estimate for all households:
+However whenever we do so, the margin of error will most likely increase because the sample size is reduced. For example, the median income for multi-racial households in Santa Clara County has a much larger margin of error than the estimate for all households:
 
 |Name|Dataset|Median Household Income|Margin of Error|Lower Bound|Upper Bound|
 |---|---|---:|---:|---:|---:|

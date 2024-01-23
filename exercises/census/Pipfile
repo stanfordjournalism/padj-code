@@ -8,6 +8,7 @@ jupyterlab = "*"
 pandas = "*"
 census = "*"
 us = "*"
+altair = "*"
 
 [dev-packages]
 
