@@ -1,5 +1,10 @@
 # Technical FAQs
 
+### How do I use a command-line shell (aka "terminal")?
+
+We often use the command line or "shell" -- a text-based interface to your operating system -- to run Python scripts and perform other tasks. You can learn how to open a terminal (another name for the "shell") by doing a web search for *"How to open a terminal on Mac"* (or Windows if that's your operating system).
+
+To use the shell, you'll also want to get familiar with some [command-line basics](https://github.com/stanfordjournalism/padj-code/blob/main/exercises/bash_drill.md).
 
 ### How do I prettify my shell prompt?
 
