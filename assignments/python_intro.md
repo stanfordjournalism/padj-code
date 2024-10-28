@@ -19,8 +19,20 @@ Read and work through Chapters 0-2 in [Automate the Boring Stuff][] (2nd Edition
 
 ## Code
 
-Work through the **Code Challenge** at the end of the [Python Syntax Crash Course][].
+Work through the **Code Challenge** at the end of the [Python Syntax Crash Course][]. You can use the Data Journalism Notebook site to complete your work, but **please make sure to start a fresh notebook called `filter_animals.ipynb`.** 
+
+> It's important that you start a new notebook for this assignment and do not include unrelated code from class exercises. The notebook should only contain the code required to complete the challenge  -- no other extraneous or unrelated code. **Submissions that contain unrelated code will lose points.**
 
 [Automate the Boring Stuff]: https://automatetheboringstuff.com/2e/
 [Python Syntax Crash Course]: https://stanfordjournalism.github.io/data-journalism-notebooks/lab?path=python_syntax_crash_course.ipynb
 
+### Submission
+
+Once you've completed the **Code Challenge** on the Data Journalism Notebook site, you should download and submit a copy of the notebook via Canvas. You can do this by:
+
+- Navigating to the left-hand panel
+- Right clicking on your file name and clicking download.
+
+Here's a screenshot of what the interface looks like: 
+
+<img width="500" alt="Screenshot 2024-10-27 at 5 16 23 PM" src="https://github.com/user-attachments/assets/7443cf02-7c51-4e49-9eb1-12de4b15f8a0">
