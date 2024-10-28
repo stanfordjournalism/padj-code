@@ -6,6 +6,27 @@ We often use the command line or "shell" -- a text-based interface to your opera
 
 To use the shell, you'll also want to get familiar with some [command-line basics](https://github.com/stanfordjournalism/padj-code/blob/main/exercises/bash_drill.md).
 
+### How do I open a Python interactive session on the command-line?
+
+First, open a terminal. If you need help on that front, see *How do I use a command-line shell (aka "terminal")?* in this FAQ.
+
+Then, in the shell, just type `python` or, on systems, you may need to type `python3`. That should drop you into an interactive coding environment where you can execute snippets of Python code. Here's an example session:
+
+```python
+# type either "python" or "python3" (it varies by system)
+ ~> python
+Python 3.11.4 (main, Jul 26 2023, 20:55:49) [Clang 14.0.3 (clang-1403.0.22.14.1)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> total = 2 + 2
+>>> print(total)
+```
+
+The chevrons (`>>>`) above indicate visually that you are in an interactive Python session. On these lines, you can type normal Python code and hit `return` to execute the code on a given line.
+
+To close the shell and drop back to the regular terminal, press `Control + D` or type `exit()` and hit `return`.
+
+> NOTE: Any work you do in an interactive shell will be lost after you close it, so be sure to copy it into a normal text file if you need to save the work.
+
 ### How do I prettify my shell prompt?
 
 > Note, depending on how your shell is set up, you may need to place the below environment variable in a different configuration file such as `~/.bash_profile`, `~/.bashrc`.
