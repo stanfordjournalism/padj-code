@@ -41,6 +41,8 @@ But, if you still need help, you can try these resources:
 
 ### Semi-Live
 
+* **Chat GPT** and similar generative AI can be of great assistance when debugging a problem. But don't resort to this option too quickly. A great deal can be gained from reading traditional resources (e.g. blogposts, Stack Overflow) as well as asking questions of humans, which helps develop your skill in framing and communicating technical questions.
+
 * **News Nerdery** this [Slack Workspace](https://newsnerdery.org/) will connect you to other working journalists who either can give you insight on your code or direct you to resources that can help you. Before accessing the slack, you need to request an invite to the slack, then you'll have access to channels such as `#python` and `#helpme`.
 
 * **r/learnpython** this [subreddit](https://www.reddit.com/r/learnpython/) can be great for crowd-sourcing solutions to your coding issues. Some programmers prefer to use StackOverflow, but python subreddits are a bit friendlier for new coders. StackOverflow can have coding solutions that are difficult to understand for new programmers, and thus can leave you confused about how to adjust the code to fit your unique problem.
