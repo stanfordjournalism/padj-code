@@ -46,7 +46,7 @@ The above is not an exhaustive list of reasons for point deductions, but are amo
 
 Just as you would review a draft of a paper before submitting it in a philosophy or history class, you should carefully review your code and its outputs (if any) before submitting it for this class. Use the above items as a checklist to make sure you've produced code that is readable, reproducible and reliable.
 
-One easy way to guard against style-related point deductions is to install and use a code formatting tool such as [black](https://github.com/psf/black). This tool will automatically reformat your Python code to follow standard Python style conventions.
+One easy way to guard against style-related point deductions is to install and use a code formatting tool such as [ruff](https://docs.astral.sh/ruff/). This tool will automatically reformat your Python code to follow standard Python style conventions.
 
 And of course, make sure you review any outputs produced by your script(s). While incorrect outputs or calculations don't guarantee a low or failing grade, they are typically the type of error that will cost the most points. 
 
