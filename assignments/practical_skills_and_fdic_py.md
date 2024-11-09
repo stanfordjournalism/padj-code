@@ -12,7 +12,7 @@ Learn how to:
 * Use [code libraries](https://stanfordjournalism.github.io/data-journalism-notebooks/lab?path=python_libraries.ipynb) included with Python or offered by third parties
 * [Work with text files](https://stanfordjournalism.github.io/data-journalism-notebooks/lab?path=python_file_io.ipynb)
 * [Work with CSVs](https://stanfordjournalism.github.io/data-journalism-notebooks/lab?path=python_csv.ipynb)
-* [Download remote files](/docs/python/remote_files.md)
+* [Download remote files](https://stanfordjournalism.github.io/data-journalism-notebooks/lab/index.html?path=python_remote_files.ipynb)
 
 You may also want to work through the [Python Syntax Crash Course][] again if you're feeling shaky on basics such as variables, conditionals, loops, etc.
 
