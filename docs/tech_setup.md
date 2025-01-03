@@ -10,8 +10,8 @@ This course requires a number of free services and tools available on Unix/Mac s
 - [Shell terminal](#shell-terminal)
 - [Version control](#version-control)
 - [Python](#python)
+- [Python install debugging](#python-install-debugging)
 - [Configure via script](#configure)
-- [DataKit](#datakit)
 
 ## Services and Platforms
 
@@ -150,23 +150,6 @@ Type `python --version`, which should return the version you just installed.
 
 > If you do not see the correct version of Python or get an error, please see the `Python install debugging` section below and/or reach out to your instructors.
 
-## Configure
-
-Open a Terminal/shell.
-
-Download and run our configuration script. You'll need to answer a few questions along the way.
-
-```
-cd ~
-
-curl -O https://raw.githubusercontent.com/stanfordjournalism/padj23-code/main/code/configure_mac_linux.py
-
-python configure_mac_linux.py
-```
-
-The configuration script will prompt you to [upload your ssh public key to GitHub](https://help.github.com/en/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account).
-
-
 ### Python install debugging
 
 Due to the variety of operating system versions and configurations, it's
@@ -208,4 +191,21 @@ Then try running `python --version` again.
 [VSCode]: https://code.visualstudio.com/
 [pyenv]: https://github.com/pyenv/pyenv
 [uv]: https://docs.astral.sh/uv/
+
+
+## Configure
+
+Open a Terminal/shell.
+
+Download and run our configuration script. You'll need to answer a few questions along the way.
+
+```
+cd ~
+
+curl -O https://raw.githubusercontent.com/stanfordjournalism/padj23-code/main/code/configure_mac_linux.py
+
+python configure_mac_linux.py
+```
+
+The configuration script will prompt you to [upload your ssh public key to GitHub](https://help.github.com/en/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account).
 
