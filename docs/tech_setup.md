@@ -90,19 +90,15 @@ Mac users will use Homebrew to install a tool called [uv][].
 At a high level, this tool enables you to:
 
 - install and use multiple versions of Python
-- install 3rd-party libraries for different Python versions and in "sandboxed" projects environments. In the latter case, libraries installed with uv are only available in the virtual environment for a   given project (this is useful when you're working on multiple projects that may require different versions of the same library).
+- install 3rd-party libraries for different Python versions and in "sandboxed" project environments. In the latter case, libraries installed with `uv` are only available in the [virtual environment](https://www.geeksforgeeks.org/python-virtual-environment/) for a given project (this is useful when you're working on multiple projects that may require different versions of the same library).
 
 We'll use it to install a recent version of Python and set it as our
-system default. 
+system default.
 
 > Keep in mind that with `uv`, you're able to install multiple
 > versions of Python and switch between them as needed.
 
-> Execute the below commands one by one (i.e. copy and paste each row
-> individually rather than all the commands at once).
-
-Open a *new* Terminal shell and make sure you are in your home
-directory.
+Open a *new* Terminal shell.
 
 Now install `uv` using Homebrew:
 
