@@ -172,9 +172,8 @@ Open a Terminal and run the following commands:
 to look in certain directories for executable files, or programs. You
 can see which directories are in your `PATH` by typing `echo $PATH`. The
 directories are separated by colons. The `uv` command we used above
-places Python versions in a directory called `~/.uv/versions`. If you
-don't see this directory in your `PATH`, you may need to add it. Where
-you add this directory depends on your shell configuration (see the prior step). Below are example commands for adding the `~/.local/bin` directory to the `PATH` for the `bash` and `zsh` shells:
+places Python versions in a directory called `~/.local/bin/`. If you
+don't see this directory *early in the list of paths in* in your `PATH`, you may need to add it or update your path to place it earlier in the list. Where you add this configuration depends on your shell (see the prior step). Below are example commands for adding the `~/.local/bin` directory to the `PATH` for the `bash` and `zsh` shells:
 
 ```bash
 echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.bash_profile
