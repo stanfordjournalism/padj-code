@@ -16,7 +16,8 @@ This course requires a number of free services and tools available on Unix/Mac s
 ## Services and Platforms
 
 * Slack: Join the course Slack workspace through Canvas.
-* Sign up for [GitHub](https://github.com/).
+* Sign up for [GitHub](https://github.com/) and get the [Student
+  Developer Pack](https://education.github.com/pack).
 
 ## Windows
 
@@ -34,11 +35,11 @@ You'll need a text editor designed for writing code. Beginners should use [VSCod
 
 ## Shell Terminal
 
-Mac and Linux both come with terminal programs, which provide a text-based interface to your operating system and related command-line tools. 
+Mac and Linux both come with terminal programs, which provide a text-based interface to your operating system and related command-line tools.
 
 On Mac, use `Command + spacebar` to perform a Spotlight search for "Terminal".
 
-For a more pleasant shell experience, we strongly recommend installing [iTerm2](https://iterm2.com/).
+For a more pleasant terminal experience, we strongly recommend installing [iTerm2](https://iterm2.com/).
 
 ## Version control
 
@@ -74,91 +75,84 @@ sudo apt install git-all
 
 ## Python
 
-**Python 3.10 - 3.11**
+**Python 3.11-3.12**
 
 Before installing Python, first open a shell and run: `python --version`.
 
-If you have Python 3.10 or 3.11, you're all set.
+If you have Python 3.11 or 3.12, you're all set.
 
 If you have an older Python version (e.g. 2.7, 3.9, etc.), follow the below instructions for Mac users.
 
 ### Mac
 
-Mac users will use Homebrew to install Python. At a high level, the
-process involves installing a tool called [pyenv][]. This tool allows
-you to install and manage multiple versions of Python.
+Mac users will use Homebrew to install a tool called [uv][].
 
-We'll use it to install Python 3.11 (the latest version of time of writing).
+At a high level, this tool enables you to:
 
-First, open a Terminal and determine which shell you are using (newer Macs will use zsh, older will have bash).
+- install and use multiple versions of Python
+- install 3rd-party libraries for different Python versions and in "sandboxed" projects environments. In the latter case, libraries installed with uv are only available in the virtual environment for a   given project (this is useful when you're working on multiple projects that may require different versions of the same library).
 
-```bash
-echo $SHELL
-```
+We'll use it to install a recent version of Python and set it as our
+system default. 
 
-Once that is complete, you're ready to install a few dependencies for
-pyenv, followed by pyenv itself.
+> Keep in mind that with `uv`, you're able to install multiple
+> versions of Python and switch between them as needed.
 
 > Execute the below commands one by one (i.e. copy and paste each row
 > individually rather than all the commands at once).
 
-```bash
-# Note, some of these commands can take several minutes to run!!
+Open a *new* Terminal shell and make sure you are in your home
+directory.
 
-brew install openssl readline sqlite3 xz zlib
-brew install pyenv
-pyenv install 3.11.6
-pyenv global 3.11.6
+Now install `uv` using Homebrew:
+
+```bash
+brew install uv
 ```
 
-Then, follow the steps in the [pyenv configuration instructions](https://github.com/pyenv/pyenv#set-up-your-shell-environment-for-pyenv) to configure your shell.
+Next, we'll use `uv` to install a recent version of Python. We'll use 3.12 in this example, but consult with your instructors to determine the best version for a given point in time.
 
-> Below is the workflow for folks on the Zsh shell, which is the
-> current default for Macs. See the pyenv docs if you're on bashrc, or
-> ask how you can change your default shell.
+> Copy and paste these commands individually into your Terminal.
 
 ```bash
-echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.zshrc
-echo '[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.zshrc
-echo 'eval "$(pyenv init -)"' >> ~/.zshrc
+uv tool update-shell
+uv python install 3.12 --default --preview
+```
+
+The above will install Python 3.12 in a hidden folder in your home
+directory: `~/.local/bin/`. (NOTE: The tilde (`~`) is a shortcut for your home directory. So `~/.local/bin/` is the same as `/Users/your-username/.local/bin/`.)
+
+> Depending on your system configuration, you may need to update some
+> shell configurations to ensure that this folder (and the newly
+> installed Python) can be found by your system. See the `Python
+> install debugging` section below for more information.
+
+Close and restart the Terminal.
+
+Type `python --version`, which should return the version you just
+installed.
+
+> If you do not see the correct version of Python or get an error, please see the `Python install debugging` section below and/or reach out to your instructors.
+
+
+### Linux
+
+Open a terminal shell and follow the Linux instructions here to install
+[uv][] and Python 3.12.
+
+> Copy and paste these commands individually into your Terminal.
+
+```
+curl -sSL https://install.astral.sh | sudo bash
+uv tool update-shell
+uv python install 3.12 --default --preview
 ```
 
 Close and restart the Terminal.
 
-Type `python --version`, which should return `3.11.6`.
+Type `python --version`, which should return the version you just installed.
 
-> If you do not see Python 3.11.6 at the end of this process, please reach
-> out for help!
-
-[Homebrew]: https://brew.sh/
-[git]: https://git-scm.com/
-[VSCode]: https://code.visualstudio.com/
-[pyenv]: https://github.com/pyenv/pyenv
-
-### Linux
-
-Use [pyenv][], a tool that allows you to install and manage multiple versions of Python. Run these commands from a shell:
-
-```
-# Clone pyenv
-git clone https://github.com/pyenv/pyenv.git ~/.pyenv
-
-# Add pyenv vars to bash config
-echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.bashrc
-echo 'export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.bashrc
-echo -e 'if command -v pyenv 1>/dev/null 2>&1; then\n  eval "$(pyenv init -)"\nfi' >> ~/.bashrc
-
-# Reinitialize shell
-exec "$SHELL"
-
-# Install build dependencies
-sudo apt-get update
-sudo apt-get install --no-install-recommends make build-essential libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev xz-utils tk-dev libxml2-dev libxmlsec1-dev libffi-dev liblzma-dev
-
-# Install python version 3.11.6
-pyenv install 3.11.6
-pyenv global 3.11.6
-```
+> If you do not see the correct version of Python or get an error, please see the `Python install debugging` section below and/or reach out to your instructors.
 
 ## Configure
 
@@ -174,20 +168,48 @@ curl -O https://raw.githubusercontent.com/stanfordjournalism/padj23-code/main/co
 python configure_mac_linux.py
 ```
 
-The configuration script will prompt you to upload your [upload your ssh public key to GitHub](https://help.github.com/en/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account).
+The configuration script will prompt you to [upload your ssh public key to GitHub](https://help.github.com/en/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account).
 
-## DataKit
 
-> Before this step, make sure you've completed *all* [configuration](#configure) described above.
+### Python install debugging
 
-[DataKit][] is a command-line tool we'll use to manage code and data for class assignments. It provides a standardized structure for projects and allows us to easily submit code to GitHub.
+Due to the variety of operating system versions and configurations, it's
+quite possible you'll run into issues installing Python.
 
-Run the following command to install DataKit:
+Below are a few steps that can help you get basic information about your
+system and possibly help you fix the issue. As always, if you run into
+problems, please reach out to your instructors. **Providing the output
+from the commands below will help us diagnose the issue.**
 
+Open a Terminal and run the following commands:
+
+1. **Check your Python version**: `python --version`
+
+2. **Check your Python path**: `which python`. This will tell you the path to the Python executable. The path should begin with `~/.local/bin/`.
+
+3. **Check your shell configuration**: `echo $SHELL`. This will tell you which shell you're using (typically *bash* or *zsh*).
+
+4. **Check your system `PATH`**: The terminal is configured by default
+to look in certain directories for executable files, or programs. You
+can see which directories are in your `PATH` by typing `echo $PATH`. The
+directories are separated by colons. The `uv` command we used above
+places Python versions in a directory called `~/.uv/versions`. If you
+don't see this directory in your `PATH`, you may need to add it. Where
+you add this directory depends on your shell configuration (see the prior step). Below are example commands for adding the `~/.local/bin` directory to the `PATH` for the `bash` and `zsh` shells:
+
+```bash
+echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.bash_profile
+
+echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.zshrc
 ```
-curl -s https://raw.githubusercontent.com/stanfordjournalism/cookiecutter-stanford-progj/master/requirements.txt | xargs pip install
-```
 
-Follow [these instructions](datakit.md#first-project) to complete the DataKit setup.
+After adding the directory to your `PATH`, close and restart the Terminal.
 
-[DataKit]: https://datakit.ap.org/
+Then try running `python --version` again.
+
+[Homebrew]: https://brew.sh/
+[git]: https://git-scm.com/
+[VSCode]: https://code.visualstudio.com/
+[pyenv]: https://github.com/pyenv/pyenv
+[uv]: https://docs.astral.sh/uv/
+
