@@ -75,14 +75,6 @@ sudo apt install git-all
 
 ## Python
 
-**Python 3.11-3.12**
-
-Before installing Python, first open a shell and run: `python --version`.
-
-If you have Python 3.11 or 3.12, you're all set.
-
-If you have an older Python version (e.g. 2.7, 3.9, etc.), follow the below instructions for Mac users.
-
 ### Mac
 
 Mac users will use Homebrew to install a tool called [uv][].
