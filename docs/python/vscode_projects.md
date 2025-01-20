@@ -33,6 +33,8 @@ uv add --dev ipykernel
 uv add pandas altair
 ```
 
+## Open project in VS Code
+
 There are a few ways to open the project in VS Code. 
 
 From the command line, you can try one of the below options:
