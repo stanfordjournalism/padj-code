@@ -53,14 +53,14 @@ Or you can simply open VS Code by clicking its icon in Applications or doing a S
 Once your project is open in VS Code:
 
 - Go to the left side navigation
-- Make sure you selecte the file Explorer area
+- Select the file `Explorer` area (top left button)
 - Click the *New File* button
 
   ![vs code new file button](../../static/vscode_new_file_button.png)
 
-Now you can create a new Jupyter notebook.
+A new file should appear in the Explorer.
 
-**Name the file and make sure it ends with the `.ipynb` extension.**
+**Name the file, making sure it ends with the `.ipynb` extension.**
 
 Open the newly created Jupyter notebook and perform the following steps:
 
