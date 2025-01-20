@@ -9,5 +9,6 @@ Stanford Graduate Journalism Program's training in newsroom coding.
 * [Getting Help](docs/getting_help.md) - Resources and strategies for finding help.
 * [Glossary](docs/glossary.md) - technical terms used in class
 * [Python](docs/python/README.md) - overview, tutorials, etc.
+  * Working with [VS Code, `uv` and Jupyter](docs/python/vscode_projects.md)
 * [Technical setup](docs/tech_setup.md) and [FAQ](docs/tech_faq.md) - recommended and required software (all free)
 * [Workflow advice](docs/workflow_advice.md) - working on the command line, etc.
