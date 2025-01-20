@@ -21,7 +21,7 @@ Run the following commands:
 ```bash
 # Create a new Python project
 # (replace "my-python-project" with an appropriate name, obv)
-uv create my-python-project
+uv init my-python-project
 
 # Navigate to the new folder
 cd my-python-project
