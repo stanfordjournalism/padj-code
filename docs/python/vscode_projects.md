@@ -50,6 +50,9 @@ Or you can simply open VS Code by clicking its icon in Applications or doing a S
 
 ## Working with Jupyter in VS Code
 
+
+### Create a Jupyter Notebook
+
 Once your project is open in VS Code:
 
 - Go to the left side navigation
@@ -62,7 +65,9 @@ A new file should appear in the Explorer.
 
 **Name the file, making sure it ends with the `.ipynb` extension.**
 
-Open the newly created Jupyter notebook and perform the following steps:
+### Select the kernel
+
+Open the newly created Jupyter notebook and perform the following steps to link the notebook to the version of Python (and  `ipykernel`) you installed earlier with `uv`.
 
 - Go to the upper right corner
 - Click `Select kernel`
@@ -75,13 +80,15 @@ Now choose the Python kernel installed by `uv` when you first set up the project
 > Typically this will be named something like `.venv/bin/python` with an indication of the specific Python version in parentheses:
 
 ![VS Code select Python kernel](../../static/vscode_select_kernel_uv_env.png)
-Test that you can import pandas:
 
-Once selected, try importing `pandas` to verify that the kernel is properly connected to the `uv`-installed environment:
+### Test library import
+
+To verify that everything is set up correctly, try importing a library that you installed with `uv`. 
+
+For example, in a notebook cell -- make sure it's a `code` cell, not `markdown` -- try importing `pandas` and executing/running the cell.
 
 ```python
 import pandas as pd
 ```
 
-If you see a green check mark, you're all good. 
-
+If you see a green check mark, you're all good.
