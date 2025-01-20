@@ -52,9 +52,13 @@ Or you can simply open VS Code by clicking its icon in Applications or doing a S
 
 Once VS Code is open, create a new Jupyter notebook by clicking on the appropriate icon in the top left corner of the window. 
 
-> **Make sure the file has a `.ipynb` extension.**
+> **Name the file and make sure it ends with the `.ipynb` extension.**
 
-Next, in the upper right of the notebook, click the `Select kernel` button and choose `Python Environments`.
+In the new Jupyter notebook:
+
+- Go to the upper right corner
+- Click `Select kernel`
+- Choose `Python Environments`
 
 ![VS Code select kernel](../../static/vscode_select_kernel_py_envs.png)
 
