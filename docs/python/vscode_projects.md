@@ -3,7 +3,11 @@
 
 Generally we use VS Code as our code editor and the `uv` command-line tool to manage both Python installation and depencencies (e.g. installing pandas, altair, etc.).
 
-See [these instructions](https://docs.astral.sh/uv/guides/integration/jupyter/#using-jupyter-from-vs-code) for details on how to use Jupyter notebooks from VS Code in combination with `uv`-managed virtual environments and dependencies.
+Below is an overview of how to set up a new Python project where you plan to use Jupyter. 
+
+> IMPORTANT: Make sure to first install VS Code [extensions](https://code.visualstudio.com/docs/editor/extension-marketplace) for [Jupyter](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter) and [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
+
+*Note, the below workflow builds on [these instructions](https://docs.astral.sh/uv/guides/integration/jupyter/#using-jupyter-from-vs-code) from the `uv` user manual.*
 
 ## Set up a Python project
 
