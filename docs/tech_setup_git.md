@@ -5,7 +5,7 @@ After installing git, you need to configure it. This is a one-time setup.
 
 Run the following commands from the terminal:
 
-> IMPORTANT: Replace "Your Name" and email with your name and email.
+> IMPORTANT: Substitute your actual name and a non-Stanford email for the name and email configurations.
 
 ```bash
 git config --global init.defaultBranch main
