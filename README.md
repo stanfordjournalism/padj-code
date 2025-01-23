@@ -11,4 +11,7 @@ Stanford Graduate Journalism Program's training in newsroom coding.
 * [Python](docs/python/README.md) - overview, tutorials, etc.
   * Working with [VS Code, `uv` and Jupyter](docs/python/vscode_projects.md)
 * [Technical setup](docs/tech_setup.md) and [FAQ](docs/tech_faq.md) - recommended and required software (all free)
+  * [Git configuration](docs/tech_setup_git.md) - setting up your Git environment
+  * [ssh keys](docs/tech_setup_ssh.md) - setting up your ssh keys and adding
+    to GitHub
 * [Workflow advice](docs/workflow_advice.md) - working on the command line, etc.
