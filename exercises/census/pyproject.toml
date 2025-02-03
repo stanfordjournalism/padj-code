@@ -6,7 +6,7 @@ readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
     "altair>=5.5.0",
-    "census",
+    "census>=0.8.23",
     "pandas>=2.2.3",
     "us>=3.2.0",
 ]
