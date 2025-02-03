@@ -3,7 +3,8 @@
 An overview of Census data and how to use the Census API to grab particular data points, margins of error, and fold them into your `pandas` and Jupyter workflow.
 
 - [Overview](overview.md) - high-level intro to Census data and various tools and platforms for working with it.
-- [census-python.ipynb](census-python.ipynb) - Use `pandas` and the [`census` Python client library][] to work with ACS data.
+- [01-census-basics.ipynb](01-census-basics.ipynb) - Basics of how to use the Census API to get ACS data, including considerations related to margins of error.
+- [02-states-counties.ipynb](01-census-basics.ipynb) - How to grab data for multiple states and/or counties.
 
 ## Setup
 
