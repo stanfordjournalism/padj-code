@@ -6,7 +6,7 @@
 
 Read and work through the following:
 
-> **NOTE: You don't have to do the exercises in Automate the Boring Stuff, but you should type in the commands for code examples throughout the text. Use a [JupyterLite notebook tab][] or fire up an interactive Python shell in GitHub Codespace by typing `python` in the Bash terminal.
+> **NOTE: You don't have to do the exercises in Automate the Boring Stuff, but you should type in the commands for code examples throughout the text. Use a [JupyterLite notebook tab][] or fire up an interactive Python shell in GitHub Codespace by typing `python` in the Bash terminal.**
 
 * Lists
 	* Read [Automate's Chapter 4 on Lists](https://automatetheboringstuff.com/chapter4/) and **stop right before** the section titled [Example Program: Magic 8 Ball with a List](https://automatetheboringstuff.com/chapter4/#calibre_link-2296).
