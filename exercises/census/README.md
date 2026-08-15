@@ -4,7 +4,7 @@ An overview of Census data and how to use the Census API to grab particular data
 
 - [Overview](overview.md) - high-level intro to Census data and various tools and platforms for working with it.
 - [01-census-basics.ipynb](01-census-basics.ipynb) - Basics of how to use the Census API to get ACS data, including considerations related to margins of error.
-- [02-states-counties.ipynb](01-census-basics.ipynb) - How to grab data for multiple states and/or counties.
+- [02-states-counties.ipynb](02-states-counties.ipynb) - How to grab data for multiple states and/or counties.
 
 ## Setup
 
