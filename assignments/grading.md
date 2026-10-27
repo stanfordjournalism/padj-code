@@ -22,7 +22,7 @@ Below are some common ways to lose points on technical assignments:
   * Not naming files or projects correctly
   * Not creating functions when asked to do so
 * Not installing dependencies such as `requests`
-* "Installing" dependencies that are built into Python (e.g. `csv` or `datetime` should *not* appear in Pipfile)
+* "Installing" dependencies that are built into Python (e.g. `csv` or `datetime` should *not* appear in a requirements tracking file such as `pyproject.toml`)
 * Broken/incomplete code
 * Incorrect output or results from a script or analysis
 * Unnecessarily complex code. For example:
