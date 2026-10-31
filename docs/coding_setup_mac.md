@@ -108,13 +108,23 @@ git config --global user.email "you@example.com"
 git config --global init.defaultBranch main
 ```
 
-Next, create an SSH key. It lets your computer prove to GitHub that it's you, without typing a password every time:
+Next, create an SSH key. It lets your computer prove to GitHub that it's you, without typing a password every time.
+
+In the command below, replace `you@example.com` with **the same email address you used in the previous step** (your GitHub email). Don't copy and paste the example email as is.
 
 ```bash
 ssh-keygen -t ed25519 -C "you@example.com"
 ```
 
-Press Enter to accept the default file location. You can choose a passphrase or press Enter twice to skip it.
+The command asks you three questions. **Press Enter for each one without typing anything:**
+
+1. **Where to save the key**: press Enter to accept the default location.
+2. **Enter passphrase**: press Enter to leave it blank.
+3. **Enter same passphrase again**: press Enter again.
+
+> **Important:** Do **not** type a passphrase. Leave it blank. A passphrase adds extra setup steps and is a common cause of problems later in the course.
+>
+> If you're asked whether to **Overwrite** an existing key, type `n`, press Enter and ask us for help. You may already have a key that other services depend on.
 
 Copy your new public key to the clipboard:
 
