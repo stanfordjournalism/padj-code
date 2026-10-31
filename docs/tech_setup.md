@@ -65,14 +65,6 @@ brew install git
 
 > The commands above are based on Steps 1-3 of [How to Install Xcode, Homebrew, Git etc.](https://www.moncefbelyamani.com/how-to-install-xcode-homebrew-git-rvm-ruby-on-mac/#laptop-script) See the blog post for more details.
 
-### Linux
-
-Open a terminal shell and run: 
-
-```
-sudo apt install git-all
-```
-
 ## Python
 
 ### Mac
@@ -119,26 +111,6 @@ Close and restart the Terminal.
 
 Type `python --version`, which should return the version you just
 installed.
-
-> If you do not see the correct version of Python or get an error, please see the `Python install debugging` section below and/or reach out to your instructors.
-
-
-### Linux
-
-Open a terminal shell and follow the Linux instructions here to install
-[uv][] and Python 3.12.
-
-> Copy and paste these commands individually into your Terminal.
-
-```
-curl -sSL https://install.astral.sh | sudo bash
-uv tool update-shell
-uv python install 3.12 --default --preview
-```
-
-Close and restart the Terminal.
-
-Type `python --version`, which should return the version you just installed.
 
 > If you do not see the correct version of Python or get an error, please see the `Python install debugging` section below and/or reach out to your instructors.
 
